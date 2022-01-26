@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Evt_Aviso</name>
+    <events>
+        <event-block sid="791374441361809">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="309871907882649" type="TXT_Aviso" />
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="673681480910139" type="System">
+                    <param id="0" name="Layout">&quot;Menu Principal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

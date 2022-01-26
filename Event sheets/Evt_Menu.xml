@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Evt_Menu</name>
+    <events>
+        <event-block sid="246004608879061">
+            <conditions>
+                <condition id="5" inverted="1" name="Is tag playing" sid="175289702208806" type="Audio">
+                    <param id="0" name="Tag">&quot;menu&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="421418073038668" type="Audio">
+                    <param id="0" name="Audio file">Main Menu Theme</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;menu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="854815177945394">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="125063921717132" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">TXT_NewGame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="343402663883181" type="Spr_Fade">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="393090730529056" type="Spr_Fade" />
+                <action id="-16" name="Wait" sid="368824283428852" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="498566165382354" type="System">
+                    <param id="0" name="Layout">Jornal</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="620030383949874" title="Selection">
+            <sub-events>
+                <event-block sid="211197425311735">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="693237769220249" type="Mouse">
+                            <param id="0" name="Object">TXT_NewGame</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="793804746989424" type="SelectionArrows">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">TXT_NewGame.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="705652923489621" type="SelectionArrows">
+                            <param id="0" name="Y">TXT_NewGame.Y</param>
+                        </action>
+                        <action id="0" name="Play" sid="709868974867955" type="Audio">
+                            <param id="0" name="Audio file">blip3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="601843832426967">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="182022685834852" type="Mouse">
+                            <param id="0" name="Object">TXT_Continue</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="756819012354943" type="SelectionArrows">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">TXT_NewGame.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="421239924035868" type="SelectionArrows">
+                            <param id="0" name="Y">TXT_Continue.Y</param>
+                        </action>
+                        <action id="0" name="Play" sid="209089449629954" type="Audio">
+                            <param id="0" name="Audio file">blip3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="964882954187328" title="Cursor">
+            <sub-events>
+                <event-block sid="596814798754364">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="705251772832421" type="TEST_cursor">
+                            <param id="0" name="Object">TXT_NewGame</param>
+                        </condition>
+                        <condition id="3" name="Is button down" sid="197987824263080" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="2" name="Set fade-in time" sid="934507697677936" type="Spr_Fade">
+                            <param id="0" name="Fade-in time">1</param>
+                        </action>
+                        <action behavior="Fade" id="0" name="Restart fade" sid="684653501169019" type="Spr_Fade" />
+                        <action id="-16" name="Wait" sid="944103713065984" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="921667486953731" type="System">
+                            <param id="0" name="Layout">Jornal</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="258933338098504">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="391670916947757" type="Gamepad">
+                            <param id="0" name="Gamepad">1</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="915838927321387" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="329030149703489" type="TEST_cursor">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="462694653019252">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="493401308963386" type="Gamepad">
+                            <param id="0" name="Gamepad">1</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="278742029408377" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="459723716679029" type="TEST_cursor">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="297087062385214">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="316103750055545" type="Gamepad">
+                            <param id="0" name="Gamepad">1</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="831798089516388" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="437180305145544" type="TEST_cursor">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="303095410635252">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="788336451685399" type="Gamepad">
+                            <param id="0" name="Gamepad">1</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="366629805076797" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="363290452707651" type="TEST_cursor">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="905505528216148" title="Touch Support">
+            <sub-events>
+                <event-block sid="278663706873048">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="275810310182316" type="Touch">
+                            <param id="0" name="Object">TXT_NewGame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="2" name="Set fade-in time" sid="858643302037955" type="Spr_Fade">
+                            <param id="0" name="Fade-in time">1</param>
+                        </action>
+                        <action behavior="Fade" id="0" name="Restart fade" sid="567740755543567" type="Spr_Fade" />
+                        <action id="-16" name="Wait" sid="324256926826856" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="300364410471140" type="System">
+                            <param id="0" name="Layout">Jornal</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="190171736565790">
+            <conditions>
+                <condition id="3" name="On touched object" sid="325396386157654" type="Touch">
+                    <param id="0" name="Object">OBJ_Changelog</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="296602023270677" type="Text">
+                    <param id="0" name="X">694</param>
+                    <param id="1" name="Y">25</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
