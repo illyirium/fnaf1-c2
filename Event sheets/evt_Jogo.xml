@@ -3,157 +3,292 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evt_Jogo</name>
     <events>
-        <event-group description="" sid="373688101835326" title="luz e porta">
+        <event-group description="" sid="373688101835326" title="Luz+Porta">
             <sub-events>
-                <event-block sid="315682692550950">
-                    <conditions>
-                        <condition id="4" name="Is touching object" sid="147715658468960" type="Touch">
-                            <param id="0" name="Object">OBJ_ButtonDoorLeft2</param>
-                        </condition>
-                    </conditions>
-                    <actions />
+                <event-group description="" sid="982334713401362" title="Porta">
                     <sub-events>
-                        <event-block sid="104040724536503">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="197661841155335" type="Spr_Office">
-                                    <param id="0" name="Instance variable">ladodaluz</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="516801161228980" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="166437514163513" type="Spr_Office">
-                                    <param id="0" name="Instance variable">ladodaluz</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="224545114885259">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="288184273350585" type="Spr_Office">
-                                    <param id="0" name="Instance variable">ladodaluz</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="837841037852678" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="683889309464233" type="Spr_Office">
-                                    <param id="0" name="Instance variable">ladodaluz</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
+                        <event-group description="" sid="612056590050042" title="Ativar/DesativarP">
+                            <sub-events>
+                                <event-block sid="689208137944702">
+                                    <conditions>
+                                        <condition id="17" name="On tap object" sid="765637685370108" type="Touch">
+                                            <param id="0" name="Object">OBJ_ButtonDoorLeft1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="516252426735862">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="823499323977030" type="OBJ_ButtonDoorLeft1">
+                                                    <param id="0" name="Instance variable">Porta</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="3" name="Compare frame" sid="709477897707686" type="Spr_PortaLeft">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">0</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="724267079774629" type="Spr_PortaLeft">
+                                                    <param id="0" name="Animation">&quot;FrameInutilMasNDeleta&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="184153005322884" type="Spr_PortaLeft">
+                                                    <param id="0" name="Animation">&quot;PortaFecha&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="694389160184227" type="OBJ_ButtonDoorLeft1">
+                                                    <param id="0" name="Instance variable">Porta</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="935593326870044">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="149503308005881" type="OBJ_ButtonDoorLeft1">
+                                                    <param id="0" name="Instance variable">Porta</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="3" name="Compare frame" sid="139159051048440" type="Spr_PortaLeft">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">12</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="706216474738458" type="Spr_PortaLeft">
+                                                    <param id="0" name="Animation">&quot;PortaAbre&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="653506386990229" type="Spr_PortaLeft">
+                                                    <param id="0" name="Animation">&quot;PortaFecha&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="268304332382430" type="OBJ_ButtonDoorLeft1">
+                                                    <param id="0" name="Instance variable">Porta</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="889426351318152">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="543639777087187" type="OBJ_ButtonDoorLeft1">
+                                                    <param id="0" name="Instance variable">Porta</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="3" name="Compare frame" sid="633622170348390" type="Spr_PortaLeft">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">12</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="325453608052441" type="Spr_PortaLeft">
+                                                    <param id="0" name="Animation">&quot;PortaFecha&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="344447612126214" type="Spr_PortaLeft">
+                                                    <param id="0" name="Animation">&quot;PortaAbre&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="420724533005047" type="OBJ_ButtonDoorLeft1">
+                                                    <param id="0" name="Instance variable">Porta</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="691999428713716">
+                                    <conditions>
+                                        <condition id="17" name="On tap object" sid="704418686887634" type="Touch">
+                                            <param id="0" name="Object">OBJ_ButtonDoorRight1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="893820118139707">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="609922664964017" type="OBJ_ButtonDoorRight1">
+                                                    <param id="0" name="Instance variable">porta</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="3" name="Compare frame" sid="291577148982322" type="Spr_PortaRight1">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">0</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="473425646605896" type="Spr_PortaRight1">
+                                                    <param id="0" name="Animation">&quot;FrameInutilMasNDeleta&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="937638915281474" type="Spr_PortaRight1">
+                                                    <param id="0" name="Animation">&quot;PortaFecha&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="905549838179088" type="OBJ_ButtonDoorRight1">
+                                                    <param id="0" name="Instance variable">porta</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="706773091974058">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="894200178879230" type="OBJ_ButtonDoorRight1">
+                                                    <param id="0" name="Instance variable">porta</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="3" name="Compare frame" sid="534951495029908" type="Spr_PortaRight1">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">12</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="664157367131797" type="Spr_PortaRight1">
+                                                    <param id="0" name="Animation">&quot;PortaAbre&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="107339256311883" type="Spr_PortaRight1">
+                                                    <param id="0" name="Animation">&quot;PortaFecha&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="729843342880018" type="OBJ_ButtonDoorRight1">
+                                                    <param id="0" name="Instance variable">porta</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="631311387811143">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="551087688775442" type="OBJ_ButtonDoorRight1">
+                                                    <param id="0" name="Instance variable">porta</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="3" name="Compare frame" sid="850962422085789" type="Spr_PortaRight1">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">12</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="890702339270931" type="Spr_PortaRight1">
+                                                    <param id="0" name="Animation">&quot;PortaFecha&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="764706218367420" type="Spr_PortaRight1">
+                                                    <param id="0" name="Animation">&quot;PortaAbre&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="984343839789801" type="OBJ_ButtonDoorRight1">
+                                                    <param id="0" name="Instance variable">porta</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                     </sub-events>
-                </event-block>
-                <event-block sid="287546831131982">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="519512773136058" type="Spr_Office">
-                            <param id="0" name="Instance variable">ladodaluz</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="599236545476835" type="Spr_LeftBotoes">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="576069107692432" type="Spr_Office">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="137241711786458">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="184521548391394" type="Spr_Office">
-                            <param id="0" name="Instance variable">ladodaluz</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="242053047674165" type="Spr_LeftBotoes">
-                            <param id="0" name="Animation">&quot;Animation3&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="362170749962145" type="Spr_Office">
-                            <param id="0" name="Animation">&quot;Animation2&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="547746293611600">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="133217158544240" type="Spr_Office">
-                            <param id="0" name="Instance variable">ladodaluz</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="531000002455551" type="Spr_LeftBotoes">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="176114072743500" type="Spr_Office">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="696245491421474">
-                    <conditions>
-                        <condition id="4" name="Is touching object" sid="191240223116711" type="Touch">
-                            <param id="0" name="Object">OBJ_ButtonDoorRight2</param>
-                        </condition>
-                    </conditions>
-                    <actions />
+                </event-group>
+                <event-group description="" sid="657794897116889" title="Luz">
                     <sub-events>
-                        <event-block sid="844839546769528">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="421180215977178" type="Spr_Office">
-                                    <param id="0" name="Instance variable">ladodaluz</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="666005301147977" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="762615929520300" type="Spr_Office">
-                                    <param id="0" name="Instance variable">ladodaluz</param>
-                                    <param id="1" name="Value">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="559695737386577">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="713066113189668" type="Spr_Office">
-                                    <param id="0" name="Instance variable">ladodaluz</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="218106584675649" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="152469352116410" type="Spr_Office">
-                                    <param id="0" name="Instance variable">ladodaluz</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
+                        <event-group description="" sid="188160637878890" title="Ativar/Desativar">
+                            <sub-events>
+                                <event-block sid="315682692550950">
+                                    <conditions>
+                                        <condition id="17" name="On tap object" sid="147715658468960" type="Touch">
+                                            <param id="0" name="Object">OBJ_ButtonDoorLeft2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="104040724536503">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="197661841155335" type="Spr_Office">
+                                                    <param id="0" name="Instance variable">ladodaluz</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="516801161228980" type="System">
+                                                    <param id="0" name="Seconds">0.1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="166437514163513" type="Spr_Office">
+                                                    <param id="0" name="Instance variable">ladodaluz</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="224545114885259">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="288184273350585" type="Spr_Office">
+                                                    <param id="0" name="Instance variable">ladodaluz</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="837841037852678" type="System">
+                                                    <param id="0" name="Seconds">0.1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="683889309464233" type="Spr_Office">
+                                                    <param id="0" name="Instance variable">ladodaluz</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="696245491421474">
+                                    <conditions>
+                                        <condition id="17" name="On tap object" sid="191240223116711" type="Touch">
+                                            <param id="0" name="Object">OBJ_ButtonDoorRight2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="844839546769528">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="421180215977178" type="Spr_Office">
+                                                    <param id="0" name="Instance variable">ladodaluz</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="666005301147977" type="System">
+                                                    <param id="0" name="Seconds">0.1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="762615929520300" type="Spr_Office">
+                                                    <param id="0" name="Instance variable">ladodaluz</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="559695737386577">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="713066113189668" type="Spr_Office">
+                                                    <param id="0" name="Instance variable">ladodaluz</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="218106584675649" type="System">
+                                                    <param id="0" name="Seconds">0.1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="152469352116410" type="Spr_Office">
+                                                    <param id="0" name="Instance variable">ladodaluz</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                     </sub-events>
-                </event-block>
+                </event-group>
                 <event-block sid="451535109897142">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="151039057460653" type="Spr_Office">
@@ -162,7 +297,12 @@
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="4" name="Set animation" sid="438913363869215" type="Spr_Office">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="876352285561732">
                             <conditions>
@@ -174,14 +314,6 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="695997843025468" type="Spr_LeftBotoes">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="645503327471725" type="Spr_RightBotoes">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="791839435547729" type="Spr_Office">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -197,15 +329,37 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="636130702044179" type="Spr_LeftBotoes">
-                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                    <param id="0" name="Animation">&quot;OnlyDoor&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="704363463961287" type="Spr_RightBotoes">
+                            </actions>
+                        </event-block>
+                        <event-block sid="710441193431180">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="725873823064173" type="OBJ_ButtonDoorRight1">
+                                    <param id="0" name="Instance variable">porta</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="636327792731762" type="Spr_RightBotoes">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="973841993949682" type="Spr_Office">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                            </actions>
+                        </event-block>
+                        <event-block sid="734333452315256">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="170038231227217" type="OBJ_ButtonDoorRight1">
+                                    <param id="0" name="Instance variable">porta</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="969808893803941" type="Spr_RightBotoes">
+                                    <param id="0" name="Animation">&quot;OnlyDoor&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -220,7 +374,12 @@
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="4" name="Set animation" sid="645133273026245" type="Spr_Office">
+                            <param id="0" name="Animation">&quot;LeftLight&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="408630882345746">
                             <conditions>
@@ -232,15 +391,7 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="904097897850250" type="Spr_LeftBotoes">
-                                    <param id="0" name="Animation">&quot;Animation3&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="428385920299527" type="Spr_RightBotoes">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="224273503259293" type="Spr_Office">
-                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                    <param id="0" name="Animation">&quot;OnlyLight&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -255,15 +406,41 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="326164457877426" type="Spr_LeftBotoes">
-                                    <param id="0" name="Animation">&quot;Animation4&quot;</param>
+                                    <param id="0" name="Animation">&quot;Both&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="101029013385799" type="Spr_RightBotoes">
+                            </actions>
+                        </event-block>
+                        <event-block sid="300992715498841">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                        <event-block sid="623174590608414">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="286555204600055" type="OBJ_ButtonDoorRight1">
+                                    <param id="0" name="Instance variable">porta</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="237649360409214" type="Spr_RightBotoes">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="330248489923535" type="Spr_Office">
-                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                            </actions>
+                        </event-block>
+                        <event-block sid="189873362698682">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="741999376237689" type="OBJ_ButtonDoorRight1">
+                                    <param id="0" name="Instance variable">porta</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="729555698822446" type="Spr_RightBotoes">
+                                    <param id="0" name="Animation">&quot;OnlyDoor&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -278,113 +455,74 @@
                             <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
-                    <actions />
-                </event-block>
-                <event-block sid="759343764647128">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="637492855991133" type="OBJ_ButtonDoorLeft1">
-                            <param id="0" name="Instance variable">Porta</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="364442332005497" type="Spr_LeftBotoes">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="244089910163956" type="Spr_RightBotoes">
-                            <param id="0" name="Animation">&quot;Animation3&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="387231573287398" type="Spr_Office">
-                            <param id="0" name="Animation">&quot;Animation3&quot;</param>
+                        <action id="4" name="Set animation" sid="915751725527187" type="Spr_Office">
+                            <param id="0" name="Animation">&quot;RightLight&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
-                </event-block>
-                <event-block sid="280951814750930">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="538586816551597" type="OBJ_ButtonDoorLeft1">
-                            <param id="0" name="Instance variable">Porta</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="210720136797683" type="Spr_LeftBotoes">
-                            <param id="0" name="Animation">&quot;Animation2&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="330925717147572" type="Spr_RightBotoes">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="648841612040365" type="Spr_Office">
-                            <param id="0" name="Animation">&quot;Animation3&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="689208137944702">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="765637685370108" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">OBJ_ButtonDoorLeft1</param>
-                        </condition>
-                    </conditions>
-                    <actions />
                     <sub-events>
-                        <event-block sid="516252426735862">
+                        <event-block sid="810978287555300">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="823499323977030" type="OBJ_ButtonDoorLeft1">
+                                <condition id="-7" name="Compare instance variable" sid="124760476411497" type="OBJ_ButtonDoorRight1">
+                                    <param id="0" name="Instance variable">porta</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="292908824551566" type="Spr_RightBotoes">
+                                    <param id="0" name="Animation">&quot;OnlyLight&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="104124952724867">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="178182155565929" type="OBJ_ButtonDoorRight1">
+                                    <param id="0" name="Instance variable">porta</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="729139029455787" type="Spr_RightBotoes">
+                                    <param id="0" name="Animation">&quot;Both&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="990226683102040">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                        <event-block sid="317667211055760">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="585598809910277" type="OBJ_ButtonDoorLeft1">
                                     <param id="0" name="Instance variable">Porta</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="3" name="Compare frame" sid="709477897707686" type="Spr_PortaLeft">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">12</param>
-                                </condition>
-                                <condition id="2" name="Is playing" sid="724267079774629" type="Spr_PortaLeft">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="184153005322884" type="Spr_PortaLeft">
+                                <action id="4" name="Set animation" sid="182725984778765" type="Spr_LeftBotoes">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="694389160184227" type="OBJ_ButtonDoorLeft1">
-                                    <param id="0" name="Instance variable">Porta</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
                             </actions>
                         </event-block>
-                        <event-block sid="889426351318152">
+                        <event-block sid="363078978960307">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="543639777087187" type="OBJ_ButtonDoorLeft1">
+                                <condition id="-7" name="Compare instance variable" sid="761279162469851" type="OBJ_ButtonDoorLeft1">
                                     <param id="0" name="Instance variable">Porta</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
-                                <condition id="3" name="Compare frame" sid="633622170348390" type="Spr_PortaLeft">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">12</param>
-                                </condition>
-                                <condition id="2" name="Is playing" sid="325453608052441" type="Spr_PortaLeft">
-                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
-                                </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="344447612126214" type="Spr_PortaLeft">
-                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                <action id="4" name="Set animation" sid="489561725909982" type="Spr_LeftBotoes">
+                                    <param id="0" name="Animation">&quot;OnlyDoor&quot;</param>
                                     <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="420724533005047" type="OBJ_ButtonDoorLeft1">
-                                    <param id="0" name="Instance variable">Porta</param>
-                                    <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -424,9 +562,7 @@
             <sub-events>
                 <event-block sid="885461409918815">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" sid="359400063221985" type="Mouse">
-                            <param id="0" name="Object">Spr_Office</param>
-                        </condition>
+                        <condition id="-20" inverted="1" name="Is on mobile device" sid="359400063221985" type="System" />
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="179887359205990" type="OBJ_TurnLeft" />

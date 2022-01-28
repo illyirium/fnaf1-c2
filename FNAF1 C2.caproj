@@ -50,7 +50,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Firefox</prop>
+        <prop name="Preview browser">Custom</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -126,6 +126,9 @@
             </object-type>
             <object-type name="OBJ_ButtonDoorRight1" sid="951824535003788">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="porta" sid="923564317944468" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565077517671914" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -243,7 +246,7 @@
                     <animation framecount="1" loop="0" name="FrameInutilMasNDeleta" pingpong="0" repeatcount="1" repeatto="0" sid="993462605598685" speed="5">
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\89.png" />
                     </animation>
-                    <animation framecount="13" loop="0" name="PortaFecha" pingpong="0" repeatcount="1" repeatto="0" sid="194432015221204" speed="5">
+                    <animation framecount="13" loop="0" name="PortaAbre" pingpong="0" repeatcount="1" repeatto="0" sid="194432015221204" speed="5">
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\102.png" />
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\101.png" />
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\100.png" />
@@ -257,6 +260,248 @@
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\92.png" />
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\91.png" />
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\89.png" />
+                    </animation>
+                    <animation framecount="13" loop="0" name="PortaFecha" pingpong="0" repeatcount="1" repeatto="0" sid="667492096495472" speed="5">
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Spr_PortaRight1" sid="319451393691430">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="FrameInutilMasNDeleta" pingpong="0" repeatcount="1" repeatto="0" sid="480464178219782" speed="5">
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\89.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="13" loop="0" name="PortaAbre" pingpong="0" repeatcount="1" repeatto="0" sid="908327053709012" speed="5">
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\102.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\101.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\100.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\99.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\98.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\97.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\96.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\95.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\94.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\93.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\92.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\91.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\89.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="13" loop="0" name="PortaFecha" pingpong="0" repeatcount="1" repeatto="0" sid="374378646040117" speed="5">
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>

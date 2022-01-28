@@ -152,6 +152,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <porta>0</porta>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -214,7 +217,7 @@
                 <instance type="Spr_PortaLeft" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Animation2</initial-animation>
+                        <initial-animation>FrameInutilMasNDeleta</initial-animation>
                         <initial-frame>12</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -228,6 +231,28 @@
                         <height>617</height>
                         <depth>0</depth>
                         <hotspotX>0.502242148</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Spr_PortaRight1" uid="37">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>FrameInutilMasNDeleta</initial-animation>
+                        <initial-frame>12</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1043</x>
+                        <y>319</y>
+                        <z>0</z>
+                        <width>223</width>
+                        <height>720</height>
+                        <depth>0</depth>
+                        <hotspotX>0.497757852</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
