@@ -544,20 +544,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="639672438830647">
-                    <conditions>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="175540954002184" type="Scroll">
-                            <param id="0" name="Object">MouseBruh</param>
-                        </condition>
-                        <condition id="-20" inverted="1" name="Is on mobile device" sid="135738483211853" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="518554395940420" type="Scroll">
-                            <param id="0" name="X">lerp(Self.X,MouseBruh.X,0.2)</param>
-                            <param id="1" name="Y">lerp(Self.Y,MouseBruh.Y,0.2)</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="416691035572944" title="mobile control">
@@ -624,13 +610,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Fade" id="4" name="Set fade-out time" sid="328719774240294" type="Spr_Fade">
-                    <param id="0" name="Fade-out time">1</param>
-                </action>
-                <action behavior="Fade" id="0" name="Restart fade" sid="847460084138570" type="Spr_Fade" />
-                <action id="-16" name="Wait" sid="494291837726731" type="System">
-                    <param id="0" name="Seconds">0.1</param>
-                </action>
                 <action id="1" name="Close" sid="708933014909606" type="Browser" />
             </actions>
         </event-block>
@@ -728,6 +707,12 @@
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="841033458172884" type="Scroll">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="198194688228700" type="OBJ_CamerasScroll">
+                                    <param id="0" name="State">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="960323596597823">
@@ -742,7 +727,29 @@
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="672953377205194" type="Scroll">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="693478410309174" type="OBJ_CamerasScroll">
+                                    <param id="0" name="State">0</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="345782273949260">
+                                    <conditions>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="276961205015684" type="Scroll">
+                                            <param id="0" name="Object">MouseBruh</param>
+                                        </condition>
+                                        <condition id="-20" inverted="1" name="Is on mobile device" sid="790566631259221" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="523215984782930" type="Scroll">
+                                            <param id="0" name="X">lerp(Self.X,MouseBruh.X,0.2)</param>
+                                            <param id="1" name="Y">lerp(Self.Y,MouseBruh.Y,0.2)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -766,6 +773,12 @@
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="838180381592380" type="Scroll">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="916536103013302" type="OBJ_CamerasScroll">
+                                    <param id="0" name="State">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="752478325301055">
@@ -780,11 +793,109 @@
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="400155540540171" type="Scroll">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="479473077470559" type="OBJ_CamerasScroll">
+                                    <param id="0" name="State">0</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="639672438830647">
+                                    <conditions>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="175540954002184" type="Scroll">
+                                            <param id="0" name="Object">MouseBruh</param>
+                                        </condition>
+                                        <condition id="-20" inverted="1" name="Is on mobile device" sid="135738483211853" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="518554395940420" type="Scroll">
+                                            <param id="0" name="X">lerp(Self.X,MouseBruh.X,0.2)</param>
+                                            <param id="1" name="Y">lerp(Self.Y,MouseBruh.Y,0.2)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="216238991117516">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="597747875332958" type="OBJ_CamerasScroll">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">427</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="638989321130141" type="OBJ_CamerasScroll">
+                            <param id="0" name="Instance variable">MoverCameras</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="961568878438839">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="391653661617820" type="OBJ_CamerasScroll">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">773</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="631890000162323" type="OBJ_CamerasScroll">
+                            <param id="0" name="Instance variable">MoverCameras</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="830813809677766">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="367644563095451" type="OBJ_CamerasScroll">
+                            <param id="0" name="Instance variable">MoverCameras</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="473212393254538" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="943889025688981" type="OBJ_CamerasScroll">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="473743894357048">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="706463881239144" type="OBJ_CamerasScroll">
+                            <param id="0" name="Instance variable">MoverCameras</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="147172485276651" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="798983930040076" type="OBJ_CamerasScroll">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="676254877752483">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="934884073823630" type="Scroll">
+                    <param id="0" name="Object">MouseBruh</param>
+                </condition>
+                <condition id="-20" inverted="1" name="Is on mobile device" sid="449733485556134" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="624068435528794" type="Scroll">
+                    <param id="0" name="X">lerp(Self.X,MouseBruh.X,0.2)</param>
+                    <param id="1" name="Y">lerp(Self.Y,MouseBruh.Y,0.2)</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

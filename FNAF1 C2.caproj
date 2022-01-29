@@ -2,8 +2,8 @@
 <c2project>
     <name>FNAF1 C2</name>
     <description>Sobreviva na Pizzaria mais assustadora do século no Indus!</description>
-    <version>1.0.0.0</version>
-    <author></author>
+    <version>1.0 Beta</version>
+    <author>kibeesan &amp; thegamerman88</author>
     <author-email></author-email>
     <author-website></author-website>
     <app-id>com.mycompany.myapp</app-id>
@@ -244,10 +244,10 @@
             <object-type name="Spr_PortaLeft" sid="493691243349368">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="FrameInutilMasNDeleta" pingpong="0" repeatcount="1" repeatto="0" sid="993462605598685" speed="5">
+                    <animation framecount="1" loop="0" name="FrameInutilMasNDeleta" pingpong="0" repeatcount="1" repeatto="0" sid="993462605598685" speed="30">
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\89.png" />
                     </animation>
-                    <animation framecount="13" loop="0" name="PortaAbre" pingpong="0" repeatcount="1" repeatto="0" sid="194432015221204" speed="10">
+                    <animation framecount="13" loop="0" name="PortaAbre" pingpong="0" repeatcount="1" repeatto="0" sid="194432015221204" speed="30">
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\102.png" />
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\101.png" />
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\100.png" />
@@ -262,7 +262,7 @@
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\91.png" />
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\89.png" />
                     </animation>
-                    <animation framecount="13" loop="0" name="PortaFecha" pingpong="0" repeatcount="1" repeatto="0" sid="667492096495472" speed="10">
+                    <animation framecount="13" loop="0" name="PortaFecha" pingpong="0" repeatcount="1" repeatto="0" sid="667492096495472" speed="30">
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
@@ -282,7 +282,7 @@
             <object-type name="Spr_PortaRight1" sid="319451393691430">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="FrameInutilMasNDeleta" pingpong="0" repeatcount="1" repeatto="0" sid="480464178219782" speed="5">
+                    <animation framecount="1" loop="0" name="FrameInutilMasNDeleta" pingpong="0" repeatcount="1" repeatto="0" sid="480464178219782" speed="30">
                         <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\89.png">
                             <collision-poly>
                                 <point x="1" y="1" />
@@ -292,7 +292,7 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="13" loop="0" name="PortaAbre" pingpong="0" repeatcount="1" repeatto="0" sid="908327053709012" speed="10">
+                    <animation framecount="13" loop="0" name="PortaAbre" pingpong="0" repeatcount="1" repeatto="0" sid="908327053709012" speed="30">
                         <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\102.png">
                             <collision-poly>
                                 <point x="1" y="1" />
@@ -398,7 +398,7 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="13" loop="0" name="PortaFecha" pingpong="0" repeatcount="1" repeatto="0" sid="374378646040117" speed="10">
+                    <animation framecount="13" loop="0" name="PortaFecha" pingpong="0" repeatcount="1" repeatto="0" sid="374378646040117" speed="30">
                         <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
                             <collision-poly>
                                 <point x="1" y="1" />
@@ -579,6 +579,14 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Spr_StageCamera" sid="192453832661255">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741499757202598" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Caio\Desktop\funi\Textures\Cams\Stage\19.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Object Plugins">
             <object-type name="Audio" sid="343205371169697">
@@ -748,11 +756,22 @@
         <object-type name="Browser" sid="295469121238259">
             <plugin id="Browser" />
         </object-type>
-        <object-type name="Sprite" sid="192453832661255">
+        <object-type name="OBJ_CamerasScroll" sid="517761183746258">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="MoverCameras" sid="449952039075681" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="749084628186915">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="177292865144230">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741499757202598" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Caio\Desktop\funi\Textures\Cams\Stage\19.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="668426493634809" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

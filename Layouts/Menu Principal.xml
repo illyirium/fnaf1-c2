@@ -203,7 +203,7 @@
                 </instance>
                 <instance type="TXT_Version" uid="29">
                     <properties>
-                        <text>0.0.0.2B Alpha</text>
+                        <text>1.0 Beta</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>255,255,255</color>
