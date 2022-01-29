@@ -707,12 +707,6 @@
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
-                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="841033458172884" type="Scroll">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="198194688228700" type="OBJ_CamerasScroll">
-                                    <param id="0" name="State">1</param>
-                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="960323596597823">
@@ -726,12 +720,6 @@
                                 <action id="-4" name="Set layer visible" sid="902568238088960" type="System">
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Visibility">0</param>
-                                </action>
-                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="672953377205194" type="Scroll">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="693478410309174" type="OBJ_CamerasScroll">
-                                    <param id="0" name="State">0</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -773,12 +761,6 @@
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
-                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="838180381592380" type="Scroll">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="916536103013302" type="OBJ_CamerasScroll">
-                                    <param id="0" name="State">1</param>
-                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="752478325301055">
@@ -792,12 +774,6 @@
                                 <action id="-4" name="Set layer visible" sid="147232660311686" type="System">
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Visibility">0</param>
-                                </action>
-                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="400155540540171" type="Scroll">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="479473077470559" type="OBJ_CamerasScroll">
-                                    <param id="0" name="State">0</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -818,68 +794,6 @@
                             </sub-events>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="216238991117516">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="597747875332958" type="OBJ_CamerasScroll">
-                            <param id="0" name="Comparison">3</param>
-                            <param id="1" name="X co-ordinate">427</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="638989321130141" type="OBJ_CamerasScroll">
-                            <param id="0" name="Instance variable">MoverCameras</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="961568878438839">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="391653661617820" type="OBJ_CamerasScroll">
-                            <param id="0" name="Comparison">5</param>
-                            <param id="1" name="X co-ordinate">773</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="631890000162323" type="OBJ_CamerasScroll">
-                            <param id="0" name="Instance variable">MoverCameras</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="830813809677766">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="367644563095451" type="OBJ_CamerasScroll">
-                            <param id="0" name="Instance variable">MoverCameras</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="473212393254538" type="System">
-                            <param id="0" name="Seconds">1.0</param>
-                        </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="943889025688981" type="OBJ_CamerasScroll">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="473743894357048">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="706463881239144" type="OBJ_CamerasScroll">
-                            <param id="0" name="Instance variable">MoverCameras</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="147172485276651" type="System">
-                            <param id="0" name="Seconds">1.0</param>
-                        </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="798983930040076" type="OBJ_CamerasScroll">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
