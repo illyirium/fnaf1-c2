@@ -624,8 +624,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Fade" id="2" name="Set fade-in time" sid="328719774240294" type="Spr_Fade">
-                    <param id="0" name="Fade-in time">1</param>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="328719774240294" type="Spr_Fade">
+                    <param id="0" name="Fade-out time">1</param>
                 </action>
                 <action behavior="Fade" id="0" name="Restart fade" sid="847460084138570" type="Spr_Fade" />
                 <action id="-16" name="Wait" sid="494291837726731" type="System">
@@ -634,5 +634,157 @@
                 <action id="1" name="Close" sid="708933014909606" type="Browser" />
             </actions>
         </event-block>
+        <event-group description="" sid="445015104967354" title="Sistema de Cameras">
+            <sub-events>
+                <event-block sid="703429972329133">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="501261182089466" type="Mouse">
+                            <param id="0" name="Object">Spr_BotãoPainel</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="155148947946211" type="Spr_BotãoPainel">
+                            <param id="0" name="Instance variable">selectbar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="106477319329615" type="Spr_BotãoPainel">
+                            <param id="0" name="Instance variable">selectbar</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="299151171558664">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="186806455238229" type="Spr_Painel">
+                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="502597817922436" type="Spr_Painel">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="108099991011478" type="Spr_Painel">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="990470242934400">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="950805693916345" type="Spr_Painel">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="222136645994183" type="Spr_Painel">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="479498401010772" type="Spr_Painel">
+                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="931487499675885">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="626045879505001" type="Mouse">
+                            <param id="0" name="Object">Spr_BotãoPainel</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="166756634265375" type="Spr_BotãoPainel">
+                            <param id="0" name="Instance variable">selectbar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="647875176040685" type="Spr_BotãoPainel">
+                            <param id="0" name="Instance variable">selectbar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="231326376525254">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="253833571403451" type="Spr_Painel">
+                            <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="550387401960471">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="258441136365923" type="Spr_Painel">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="189724395459849" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="960323596597823">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="436112918535667" type="Spr_Painel">
+                                    <param id="0" name="Comparison">1</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="902568238088960" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="196872485632230">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="262050311377593" type="Spr_Painel">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="772391333511895">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="573105153220536" type="Spr_Painel">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="436719475114442" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="752478325301055">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="939332687645783" type="Spr_Painel">
+                                    <param id="0" name="Comparison">1</param>
+                                    <param id="1" name="Number">12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="147232660311686" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

@@ -506,6 +506,79 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Spr_BotãoPainel" sid="182805695221596">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="selectbar" sid="692883047912882" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="203286416018607" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Cams\420.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Spr_Painel" sid="455962038121763">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="selectBar" sid="250708784595725" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="13" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="163289097592726" speed="30">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.551991" y="0.0526316" />
+                                <point x="0.53208" y="0.0526316" />
+                                <point x="0.542035" y="0.986842" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.500391" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.500433" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.500433" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.500498" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.500525" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.551991" y="0.0526316" />
+                                <point x="0.53208" y="0.0526316" />
+                                <point x="0.542035" y="0.986842" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    </animation>
+                    <animation framecount="13" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692275539239678" speed="30">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\1.png">
+                            <collision-poly>
+                                <point x="0.551991" y="0.0526316" />
+                                <point x="0.53208" y="0.0526316" />
+                                <point x="0.542035" y="0.986842" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.551991" y="0.0526316" />
+                                <point x="0.53208" y="0.0526316" />
+                                <point x="0.542035" y="0.986842" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500525" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\2.png" />
+                        <frame duration="1" hotspotX="0.500498" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\4.png" />
+                        <frame duration="1" hotspotX="0.500433" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\5.png" />
+                        <frame duration="1" hotspotX="0.500433" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\6.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\7.png" />
+                        <frame duration="1" hotspotX="0.500391" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\8.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\9.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\10.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Caio\Desktop\funi\Textures\Camera Flip Up\NEW\11.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Object Plugins">
             <object-type name="Audio" sid="343205371169697">
@@ -674,6 +747,14 @@
         </object-type>
         <object-type name="Browser" sid="295469121238259">
             <plugin id="Browser" />
+        </object-type>
+        <object-type name="Sprite" sid="192453832661255">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741499757202598" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Caio\Desktop\funi\Textures\Cams\Stage\19.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
