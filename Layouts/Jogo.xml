@@ -67,10 +67,10 @@
                         <x>636.473144531</x>
                         <y>267.04989624</y>
                         <z>0</z>
-                        <width>100.800476074</width>
+                        <width>100.070037842</width>
                         <height>131.326599121</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.503649652</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -300,7 +300,7 @@
                             <properties>
                                 <max-speed>1000</max-speed>
                                 <acceleration>1000</acceleration>
-                                <deceleration>999999999999999</deceleration>
+                                <deceleration>1000</deceleration>
                                 <directions>Left &amp; right</directions>
                                 <set-angle>No</set-angle>
                                 <default-controls>No</default-controls>
@@ -391,16 +391,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>73</x>
-                        <y>72</y>
+                        <x>0</x>
+                        <y>0</y>
                         <z>0</z>
-                        <width>126</width>
-                        <height>92</height>
+                        <width>270</width>
+                        <height>480</height>
                         <depth>0</depth>
-                        <hotspotX>0.442477882</hotspotX>
-                        <hotspotY>0.488764048</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.100000001</opacity>
                     </world>
                 </instance>
                 <instance type="OBJ_TurnLeft2" uid="32">
@@ -413,16 +413,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>744</x>
-                        <y>72</y>
+                        <x>854</x>
+                        <y>0</y>
                         <z>0</z>
-                        <width>126</width>
-                        <height>92</height>
+                        <width>270</width>
+                        <height>480</height>
                         <depth>0</depth>
-                        <hotspotX>0.557522118</hotspotX>
-                        <hotspotY>0.488764048</hotspotY>
+                        <hotspotX>1</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.100000001</opacity>
                     </world>
                 </instance>
             </instances>

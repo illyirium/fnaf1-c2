@@ -535,6 +535,7 @@
                 <event-block sid="599699771142291">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="414349678340581" type="System" />
+                        <condition id="-20" inverted="1" name="Is on mobile device" sid="173026193296529" type="System" />
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="630398460055513" type="MouseBruh">
@@ -548,6 +549,7 @@
                         <condition id="1" inverted="1" name="Is overlapping another object" sid="175540954002184" type="Scroll">
                             <param id="0" name="Object">MouseBruh</param>
                         </condition>
+                        <condition id="-20" inverted="1" name="Is on mobile device" sid="135738483211853" type="System" />
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="518554395940420" type="Scroll">
@@ -569,6 +571,20 @@
                         <action id="-9" name="Destroy" sid="545326916798551" type="OBJ_TurnLeft2" />
                     </actions>
                 </event-block>
+                <event-block sid="796403895700392">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="320109949772642" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="889600635758639" type="Scroll">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="629762170988909" type="MouseBruh">
+                            <param id="0" name="X">lerp(Self.X,Scroll.X,0.03)</param>
+                            <param id="1" name="Y">lerp(Self.Y,Scroll.Y,1)</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="848376800254503">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="874651038918598" type="Touch">
@@ -576,8 +592,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="760539062458569" type="Scroll">
+                        <action behavior="8Direction" disabled="1" id="7" name="Simulate control" sid="760539062458569" type="Scroll">
                             <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="344195528862849" type="Scroll">
+                            <param id="0" name="X">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -588,8 +607,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="181090824360012" type="Scroll">
+                        <action behavior="8Direction" disabled="1" id="7" name="Simulate control" sid="181090824360012" type="Scroll">
                             <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="791033120958773" type="Scroll">
+                            <param id="0" name="X">1200</param>
                         </action>
                     </actions>
                 </event-block>
