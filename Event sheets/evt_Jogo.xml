@@ -617,5 +617,22 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="292186941199174">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="833837556371196" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="328719774240294" type="Spr_Fade">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="847460084138570" type="Spr_Fade" />
+                <action id="-16" name="Wait" sid="494291837726731" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="1" name="Close" sid="708933014909606" type="Browser" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
