@@ -51,7 +51,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Custom</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -690,13 +690,13 @@
         <global-instance type="Browser" uid="39" />
     </global-instances>
     <sounds-folder>
-        <file name="blip3.m4a" />
         <file name="blip3.ogg" />
-        <file name="Main Menu Theme.m4a" />
         <file name="Main Menu Theme.ogg" />
-        <file name="static.m4a" />
         <file name="static.ogg" />
         <file name="NarizDoFedy.ogg" />
+        <file name="Door.ogg" />
+        <file name="Lamps.ogg" />
+        <file name="FAN and Light.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

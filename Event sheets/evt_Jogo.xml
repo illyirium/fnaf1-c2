@@ -41,6 +41,12 @@
                                                     <param id="0" name="Instance variable">Porta</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="0" name="Play" sid="762667702230249" type="Audio">
+                                                    <param id="0" name="Audio file">Door</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="935593326870044">
@@ -67,6 +73,12 @@
                                                     <param id="0" name="Instance variable">Porta</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="0" name="Play" sid="223987546622111" type="Audio">
+                                                    <param id="0" name="Audio file">Door</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="889426351318152">
@@ -92,6 +104,12 @@
                                                 <action id="-10" name="Set value" sid="420724533005047" type="OBJ_ButtonDoorLeft1">
                                                     <param id="0" name="Instance variable">Porta</param>
                                                     <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="317419165179562" type="Audio">
+                                                    <param id="0" name="Audio file">Door</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -129,6 +147,12 @@
                                                     <param id="0" name="Instance variable">porta</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="0" name="Play" sid="965825804591042" type="Audio">
+                                                    <param id="0" name="Audio file">Door</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="706773091974058">
@@ -155,6 +179,12 @@
                                                     <param id="0" name="Instance variable">porta</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="0" name="Play" sid="977502949729020" type="Audio">
+                                                    <param id="0" name="Audio file">Door</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="631311387811143">
@@ -180,6 +210,12 @@
                                                 <action id="-10" name="Set value" sid="984343839789801" type="OBJ_ButtonDoorRight1">
                                                     <param id="0" name="Instance variable">porta</param>
                                                     <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="457144662869798" type="Audio">
+                                                    <param id="0" name="Audio file">Door</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -962,5 +998,18 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="621321728575241">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="366782845208255" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="147812428923525" type="Audio">
+                    <param id="0" name="Audio file">FAN and Light</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;fanlight&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
