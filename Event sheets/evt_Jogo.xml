@@ -1164,6 +1164,15 @@
                     <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;fanlight&quot;</param>
                 </action>
+                <action id="-16" name="Wait" sid="974763335414069" type="System">
+                    <param id="0" name="Seconds">4.5</param>
+                </action>
+                <action id="0" name="Play" sid="258962785339431" type="Audio">
+                    <param id="0" name="Audio file">voiceover1c</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;night1call&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="247877410135788" title="Hora">

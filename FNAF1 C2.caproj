@@ -796,6 +796,7 @@
         <file name="CameraIdle.ogg" />
         <file name="ChangeCamera.ogg" />
         <file name="OpenCloseCamera.ogg" />
+        <file name="voiceover1c.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Main Menu Theme.ogg" />
