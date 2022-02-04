@@ -176,7 +176,7 @@
                 </instance>
                 <instance type="TXT_Version" uid="29">
                     <properties>
-                        <text>1.0 Beta</text>
+                        <text>1.1 Beta</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>255,255,255</color>
@@ -203,7 +203,7 @@
                 </instance>
                 <instance type="OBJ_Changelog" uid="33">
                     <properties>
-                        <text>Click for changelog</text>
+                        <text>Clique para ver o changelog</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>255,255,255</color>
@@ -216,10 +216,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>701</x>
-                        <y>5</y>
+                        <x>648</x>
+                        <y>1</y>
                         <z>0</z>
-                        <width>147</width>
+                        <width>227</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -230,7 +230,7 @@
                 </instance>
                 <instance type="Text" uid="34">
                     <properties>
-                        <text>Fixed more bugs that i didn&apos;t notice</text>
+                        <text>ADICIONOU PUTA COISA PRA CARALLHO MEU DEUSD DO CÉU KKKKKKKKKKKKK</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>255,255,255</color>
@@ -265,10 +265,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>685.0546875</x>
-                        <y>17.931228638</y>
+                        <x>627</x>
+                        <y>16.5</y>
                         <z>0</z>
-                        <width>32</width>
+                        <width>31</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
