@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>FNAF1 C2</name>
-    <description>Sobreviva na Pizzaria mais assustadora do século no Indus!</description>
+    <description>Fnaf 1 C2</description>
     <version>1.0 Beta</version>
     <author>kibeesan &amp; thegamerman88</author>
     <author-email></author-email>
@@ -23,6 +23,8 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_MoveTo" version="1">MoveTo</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
@@ -52,7 +54,7 @@
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">(default)</prop>
-        <prop name="Sampling">Linear</prop>
+        <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
@@ -444,6 +446,37 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Hora" sid="160634324161860">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Hora" sid="906731690274246" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="669113877559526" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Clock\12.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Clock\1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Clock\2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Clock\3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Clock\4.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Clock\5.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Clock\6.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="IndicadorNoite" sid="454114913179693">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440189703374385" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Night Counter\1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Night Counter\2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Night Counter\3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Night Counter\4.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Night Counter\5.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Night Counter\6.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Night Counter\7.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Object Plugins">
             <object-type name="Audio" sid="343205371169697">
@@ -462,6 +495,63 @@
                 <plugin id="Touch" />
             </object-type>
         </object-folder>
+        <object-folder name="6AM">
+            <object-type name="6AMBG" sid="905161710456557">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="194709775516588" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\6AM\Background.png">
+                            <collision-poly>
+                                <point x="0.21897" y="0.125" />
+                                <point x="0.78103" y="0.125" />
+                                <point x="0.78103" y="0.875" />
+                                <point x="0.21897" y="0.875" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="6AMTXT" sid="999205686761730">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="MoveTo" sid="969065286782918">
+                        <behavior id="Rex_MoveTo" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643448207510226" speed="0">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\6AM\5.png">
+                            <collision-poly>
+                                <point x="0.145455" y="0.0135135" />
+                                <point x="0.981818" y="0.5" />
+                                <point x="0.2" y="0.945946" />
+                                <point x="0.745455" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="6AMTXT2" sid="606931729947032">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="862351390420680">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="166774482820239" speed="0">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\6AM\6.png">
+                            <collision-poly>
+                                <point x="0.327266" y="0.148646" />
+                                <point x="0.799994" y="0.5" />
+                                <point x="0.200004" y="0.945946" />
+                                <point x="0.0181807" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="TXT_Aviso" sid="211032430774835">
             <plugin id="Text" />
             <behaviors>
@@ -469,9 +559,6 @@
                     <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
-        </object-type>
-        <object-type name="TXT_ExclusiveEdition" sid="293062219419701">
-            <plugin id="Text" />
         </object-type>
         <object-type name="Spr_Jornal" sid="846550534006163">
             <plugin id="Sprite" />
@@ -559,14 +646,6 @@
         <object-type name="TXT_Version" sid="395775725020715">
             <plugin id="Text" />
         </object-type>
-        <object-type name="TXT_IndusSoftwaresOBS" sid="665145849447556">
-            <plugin id="Text" />
-            <behaviors>
-                <behavior-type name="Fade" sid="202758236219895">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-        </object-type>
         <object-type name="OBJ_TurnLeft" sid="778284088593223">
             <plugin id="Sprite" />
             <animation-folder>
@@ -598,7 +677,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="398969656901263" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\GUI\Numbers\482.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -632,6 +711,19 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Spr_FadeIn" sid="576762956265086">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="712415418102905">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="254479142764702" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="C_Mobile" plugin-id="Sprite" sid="806879241055093">
@@ -651,7 +743,7 @@
         <layout>Menu Principal.xml</layout>
         <layout>Jornal.xml</layout>
         <layout>Load.xml</layout>
-        <layout>Jogo.xml</layout>
+        <layout>Noite1.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Evt_Aviso.xml</event-sheet>
@@ -691,14 +783,23 @@
     </global-instances>
     <sounds-folder>
         <file name="blip3.ogg" />
-        <file name="Main Menu Theme.ogg" />
         <file name="static.ogg" />
         <file name="NarizDoFedy.ogg" />
         <file name="Door.ogg" />
         <file name="Lamps.ogg" />
+        <file name="Children.ogg" />
+        <file name="Clock.ogg" />
+        <file name="BrokenButton.ogg" />
+        <file name="powerdown.ogg" />
         <file name="FAN and Light.ogg" />
+        <file name="CameraIdle 2.ogg" />
+        <file name="CameraIdle.ogg" />
+        <file name="ChangeCamera.ogg" />
+        <file name="OpenCloseCamera.ogg" />
     </sounds-folder>
-    <music-folder />
+    <music-folder>
+        <file name="Main Menu Theme.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
