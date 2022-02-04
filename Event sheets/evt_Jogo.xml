@@ -899,5 +899,68 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="793517228741993" title="Nariz do Freddy">
+            <sub-events>
+                <event-block sid="235389874756527">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="199208203527221" type="Touch">
+                            <param id="0" name="Object">OBJ_NarizDoFedy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="765007484674393" type="Audio">
+                            <param id="0" name="Audio file">NarizDoFedy</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="478700451713114" title="UsoDeEnergia">
+            <sub-events>
+                <event-block sid="644766466831541">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="994458546181173" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="424364535065007" type="UsoDeEnergiaPRGS">
+                            <param id="0" name="Frame number">UsoDeEnergiaPRGS.NivelEnergia</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="632924670111843">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="575296956690583" type="UsoDeEnergiaPRGS">
+                            <param id="0" name="Instance variable">NivelEnergia</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="260625134988518" type="UsoDeEnergiaPRGS">
+                            <param id="0" name="Instance variable">NivelEnergia</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="799824381173027">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="678713133979220" type="UsoDeEnergiaPRGS">
+                            <param id="0" name="Instance variable">NivelEnergia</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="743697182975639" type="UsoDeEnergiaPRGS">
+                            <param id="0" name="Instance variable">NivelEnergia</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

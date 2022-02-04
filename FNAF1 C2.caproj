@@ -283,7 +283,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="FrameInutilMasNDeleta" pingpong="0" repeatcount="1" repeatto="0" sid="480464178219782" speed="30">
-                        <frame duration="1" hotspotX="0.495968" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\106.png">
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\106.png">
                             <collision-poly>
                                 <point x="1" y="1" />
                                 <point x="0" y="1" />
@@ -293,29 +293,34 @@
                         </frame>
                     </animation>
                     <animation framecount="13" loop="0" name="PortaFecha" pingpong="0" repeatcount="1" repeatto="0" sid="374378646040117" speed="30">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\106.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\107.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\108.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\109.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\110.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\111.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\112.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\113.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\114.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\115.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\116.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\117.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\118.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\106.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\107.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\108.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\109.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\110.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\111.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\112.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\113.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\114.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\115.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\116.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\117.png" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\118.png" />
                     </animation>
-                    <animation framecount="1" loop="0" name="PortaAbre" pingpong="0" repeatcount="1" repeatto="0" sid="908327053709012" speed="30">
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\102.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
+                    <animation framecount="13" loop="0" name="PortaAbre" pingpong="0" repeatcount="1" repeatto="0" sid="220633054226875" speed="30">
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -397,6 +402,45 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741499757202598" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Caio\Desktop\funi\Textures\Cams\Stage\19.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="UsoDeEnergiaTXT" sid="597689219718724">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495575200862694" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\GUI\Battery\209.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="EnergiaRestanteTXT" sid="893240614550994">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="342620464393852" speed="5">
+                        <frame duration="1" hotspotX="0.50365" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\GUI\Battery\207.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="UsoDeEnergiaPRGS" sid="124175643745949">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="NivelEnergia" sid="798784821386350" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="163045525040404" speed="0">
+                        <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\GUI\Battery\212.png" />
+                        <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\GUI\Battery\213.png" />
+                        <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\GUI\Battery\214.png" />
+                        <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\GUI\Battery\456.png" />
+                        <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\GUI\Battery\455.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="OBJ_NarizDoFedy" sid="989511568044377">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474085799086130" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -652,6 +696,7 @@
         <file name="Main Menu Theme.ogg" />
         <file name="static.m4a" />
         <file name="static.ogg" />
+        <file name="NarizDoFedy.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
