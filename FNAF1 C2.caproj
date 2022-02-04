@@ -51,7 +51,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Custom</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -283,113 +283,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="FrameInutilMasNDeleta" pingpong="0" repeatcount="1" repeatto="0" sid="480464178219782" speed="30">
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\89.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="13" loop="0" name="PortaAbre" pingpong="0" repeatcount="1" repeatto="0" sid="908327053709012" speed="30">
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\102.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\101.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\100.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\99.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\98.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\97.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\96.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\95.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\94.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\93.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\92.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\91.png">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\89.png">
+                        <frame duration="1" hotspotX="0.495968" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\106.png">
                             <collision-poly>
                                 <point x="1" y="1" />
                                 <point x="0" y="1" />
@@ -399,103 +293,22 @@
                         </frame>
                     </animation>
                     <animation framecount="13" loop="0" name="PortaFecha" pingpong="0" repeatcount="1" repeatto="0" sid="374378646040117" speed="30">
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\106.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\107.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\108.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\109.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\110.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\111.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\112.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\113.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\114.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\115.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\116.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\117.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Right Door\118.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="PortaAbre" pingpong="0" repeatcount="1" repeatto="0" sid="908327053709012" speed="30">
+                        <frame duration="1" hotspotX="0.497758" hotspotY="0.5" original-source="C:\Users\Caio\Desktop\funi\Textures\Left Door\102.png">
                             <collision-poly>
                                 <point x="1" y="1" />
                                 <point x="0" y="1" />
@@ -718,7 +531,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="OBJ_TurnLeft2" sid="328149621221619">
+        <object-type name="OBJ_TurnRight" sid="328149621221619">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703129183444499" speed="5">
@@ -776,7 +589,19 @@
             </animation-folder>
         </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="C_Mobile" plugin-id="Sprite" sid="806879241055093">
+            <members>
+                <member>OBJ_TurnLeft</member>
+                <member>OBJ_TurnRight</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Flash" sid="806190002982293">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
     <layout-folder>
         <layout>Aviso.xml</layout>
         <layout>Menu Principal.xml</layout>

@@ -548,13 +548,39 @@
         </event-group>
         <event-group description="" sid="416691035572944" title="mobile control">
             <sub-events>
+                <event-group description="" sid="400607907719588" title="Desaparecer os controles + flash">
+                    <sub-events>
+                        <event-block sid="394922937120037">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="122159336992004" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Flash" id="0" name="Flash" sid="173702330594744" type="C_Mobile">
+                                    <param id="0" name="&apos;On&apos; time">0.5</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.5</param>
+                                    <param id="2" name="Duration">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="646568334847803">
+                            <conditions>
+                                <condition behavior="Flash" id="1" name="On flash ended" sid="579317970294877" type="C_Mobile" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="144732755253463" type="C_Mobile">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block sid="885461409918815">
                     <conditions>
                         <condition id="-20" inverted="1" name="Is on mobile device" sid="359400063221985" type="System" />
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="179887359205990" type="OBJ_TurnLeft" />
-                        <action id="-9" name="Destroy" sid="545326916798551" type="OBJ_TurnLeft2" />
+                        <action id="-9" name="Destroy" sid="545326916798551" type="OBJ_TurnRight" />
                     </actions>
                 </event-block>
                 <event-block sid="796403895700392">
@@ -576,6 +602,9 @@
                         <condition id="4" name="Is touching object" sid="874651038918598" type="Touch">
                             <param id="0" name="Object">OBJ_TurnLeft</param>
                         </condition>
+                        <condition id="4" inverted="1" name="Is touching object" sid="306026330080673" type="Touch">
+                            <param id="0" name="Object">Spr_BotãoPainel</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="8Direction" disabled="1" id="7" name="Simulate control" sid="760539062458569" type="Scroll">
@@ -589,7 +618,10 @@
                 <event-block sid="418521423844231">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="115966409512962" type="Touch">
-                            <param id="0" name="Object">OBJ_TurnLeft2</param>
+                            <param id="0" name="Object">OBJ_TurnRight</param>
+                        </condition>
+                        <condition id="4" inverted="1" name="Is touching object" sid="484393379041096" type="Touch">
+                            <param id="0" name="Object">Spr_BotãoPainel</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -625,6 +657,7 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
+                        <condition id="-20" inverted="1" name="Is on mobile device" sid="579691931616007" type="System" />
                     </conditions>
                     <actions>
                         <action id="-10" name="Set value" sid="106477319329615" type="Spr_BotãoPainel">
@@ -662,6 +695,61 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="479498401010772" type="Spr_Painel">
+                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="194667763954939">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="113008768229467" type="Touch">
+                            <param id="0" name="Object">Spr_BotãoPainel</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="201445452257050" type="Spr_BotãoPainel">
+                            <param id="0" name="Instance variable">selectbar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-20" name="Is on mobile device" sid="750791953978992" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="171239052519686" type="Spr_BotãoPainel">
+                            <param id="0" name="Instance variable">selectbar</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="126497562319743">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="590585468228701" type="Spr_Painel">
+                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="284744693659741" type="Spr_Painel">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="354820850305786" type="Spr_Painel">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="894060353566259">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="979980068351115" type="Spr_Painel">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="460306071307741" type="Spr_Painel">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="138388051463840" type="Spr_Painel">
                                     <param id="0" name="Animation">&quot;Animation2&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>

@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="175415066520249">
+        <layer name="OfficeRoom" sid="175415066520249">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -246,13 +246,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1043</x>
-                        <y>319</y>
+                        <x>1056.116455078</x>
+                        <y>317.498565674</y>
                         <z>0</z>
-                        <width>223</width>
+                        <width>209</width>
                         <height>720</height>
                         <depth>0</depth>
-                        <hotspotX>0.497757852</hotspotX>
+                        <hotspotX>0.495967746</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -522,16 +522,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>434</x>
-                        <y>437</y>
+                        <x>386</x>
+                        <y>438</y>
                         <z>0</z>
-                        <width>600</width>
-                        <height>60</height>
+                        <width>443.959472656</width>
+                        <height>44.395946503</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.699999988</opacity>
                     </world>
                 </instance>
             </instances>
@@ -560,6 +560,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -572,16 +575,19 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.100000001</opacity>
+                        <opacity>0.300000012</opacity>
                     </world>
                 </instance>
-                <instance type="OBJ_TurnLeft2" uid="32">
+                <instance type="OBJ_TurnRight" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -594,7 +600,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.100000001</opacity>
+                        <opacity>0.300000012</opacity>
                     </world>
                 </instance>
             </instances>
