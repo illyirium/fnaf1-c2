@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">Aviso</layout>
+        <layout active="1" order="2">Menu Principal</layout>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="C_Mobile" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Menu/" />
+        <folder expanded="1" path="object-folder/Office/" />
+        <folder expanded="1" path="object-folder/Object Plugins/" />
+        <folder expanded="1" path="object-folder/6AM/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Menu_Freddy/" />
+        <folder expanded="1" path="animation-folder/TXT_Continue/" />
+        <folder expanded="1" path="animation-folder/TXT_FiveNightsAtFreddys/" />
+        <folder expanded="1" path="animation-folder/TXT_NewGame/" />
+        <folder expanded="1" path="animation-folder/SelectionArrows/" />
+        <folder expanded="1" path="animation-folder/Statica_Menu/" />
+        <folder expanded="1" path="animation-folder/OBJ_ButtonDoorLeft1/" />
+        <folder expanded="1" path="animation-folder/OBJ_ButtonDoorRight1/" />
+        <folder expanded="1" path="animation-folder/OBJ_ButtonDoorRight2/" />
+        <folder expanded="1" path="animation-folder/Spr_LeftBotoes/" />
+        <folder expanded="1" path="animation-folder/Spr_RightBotoes/" />
+        <folder expanded="1" path="animation-folder/Spr_Ventilador/" />
+        <folder expanded="1" path="animation-folder/Spr_Office/" />
+        <folder expanded="1" path="animation-folder/OBJ_ButtonDoorLeft2/" />
+        <folder expanded="1" path="animation-folder/Spr_PortaLeft/" />
+        <folder expanded="1" path="animation-folder/Spr_PortaRight1/" />
+        <folder expanded="1" path="animation-folder/Spr_BotãoPainel/" />
+        <folder expanded="1" path="animation-folder/Spr_Painel/" />
+        <folder expanded="1" path="animation-folder/Spr_StageCamera/" />
+        <folder expanded="1" path="animation-folder/UsoDeEnergiaTXT/" />
+        <folder expanded="1" path="animation-folder/EnergiaRestanteTXT/" />
+        <folder expanded="1" path="animation-folder/UsoDeEnergiaPRGS/" />
+        <folder expanded="1" path="animation-folder/OBJ_NarizDoFedy/" />
+        <folder expanded="1" path="animation-folder/Hora/" />
+        <folder expanded="1" path="animation-folder/IndicadorNoite/" />
+        <folder expanded="1" path="animation-folder/6AMBG/" />
+        <folder expanded="1" path="animation-folder/6AMTXT/" />
+        <folder expanded="1" path="animation-folder/6AMTXT2/" />
+        <folder expanded="1" path="animation-folder/Spr_Jornal/" />
+        <folder expanded="1" path="animation-folder/Spr_Fade/" />
+        <folder expanded="1" path="animation-folder/TEST_cursor/" />
+        <folder expanded="1" path="animation-folder/NightCounter/" />
+        <folder expanded="1" path="animation-folder/MouseBruh/" />
+        <folder expanded="1" path="animation-folder/Scroll/" />
+        <folder expanded="1" path="animation-folder/OBJ_TurnLeft/" />
+        <folder expanded="1" path="animation-folder/OBJ_TurnRight/" />
+        <folder expanded="1" path="animation-folder/OBJ_LoadingIcon/" />
+        <folder expanded="1" path="animation-folder/exclamação_new/" />
+        <folder expanded="1" path="animation-folder/OBJ_CamerasScroll/" />
+        <folder expanded="1" path="animation-folder/Spr_FadeIn/" />
+    </folders-expanded>
+</c2uistate>
