@@ -53,7 +53,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Custom</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -116,6 +116,19 @@
             </object-type>
         </object-folder>
         <object-folder name="Office">
+            <object-folder name="Cam">
+                <object-type name="Cam_C" sid="782312212045489">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="Cam" sid="256620377828802" type="string" />
+                    </instance-variables>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="735469929686466" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
             <object-type name="OBJ_ButtonDoorLeft1" sid="740753483661539">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -223,6 +236,11 @@
                 <instance-variables>
                     <instance-variable name="ladodaluz" sid="122720554636303" type="number" />
                 </instance-variables>
+                <effects>
+                    <effect-type name="Sphere">
+                        <effect id="sphere" />
+                    </effect-type>
+                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810904604004410" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Caio\Desktop\funi\Textures\Office\39.png" />
@@ -402,8 +420,38 @@
             <object-type name="Spr_StageCamera" sid="192453832661255">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741499757202598" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Caio\Desktop\funi\Textures\Cams\Stage\19.png" />
+                    <animation framecount="1" loop="0" name="1B" pingpong="0" repeatcount="1" repeatto="0" sid="741499757202598" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Dining Room\48.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="CAM5" pingpong="0" repeatcount="1" repeatto="0" sid="264078745110187" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Employees only\83.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="CAM6" pingpong="0" repeatcount="1" repeatto="0" sid="491338724324267" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="2B" pingpong="0" repeatcount="1" repeatto="0" sid="388195291790778" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Left Corner\0.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="2A" pingpong="0" repeatcount="1" repeatto="0" sid="170251287601503" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Left Hallway\43.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="1C" pingpong="0" repeatcount="1" repeatto="0" sid="990394144359068" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Pirate Cove\66.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="4B" pingpong="0" repeatcount="1" repeatto="0" sid="674267571584686" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Right Corner\49.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="4A" pingpong="0" repeatcount="1" repeatto="0" sid="440596330745743" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Right Hallway\67.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="1A" pingpong="0" repeatcount="1" repeatto="0" sid="528584820306011" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Stage\19.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="CAM7" pingpong="0" repeatcount="1" repeatto="0" sid="387704503152919" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Toilets\41.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="CAM3" pingpong="0" repeatcount="1" repeatto="0" sid="833661346311041" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Utility Closet\62.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -474,6 +522,44 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Night Counter\5.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Night Counter\6.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Night Counter\7.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Obj_CamMap" sid="277711153317581">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="1A" pingpong="0" repeatcount="1" repeatto="0" sid="923416108022262" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\1A.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="1B" pingpong="0" repeatcount="1" repeatto="0" sid="550670546392672" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\1B.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="1C" pingpong="0" repeatcount="1" repeatto="0" sid="773474948881571" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\1C.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="2A" pingpong="0" repeatcount="1" repeatto="0" sid="571536868783265" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\2A.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="2B" pingpong="0" repeatcount="1" repeatto="0" sid="942910542052997" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\2B.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="4A" pingpong="0" repeatcount="1" repeatto="0" sid="928804473019544" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\4A.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="4B" pingpong="0" repeatcount="1" repeatto="0" sid="913987266408638" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\4B.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="CAM5" pingpong="0" repeatcount="1" repeatto="0" sid="288472974586885" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\5.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="CAM3" pingpong="0" repeatcount="1" repeatto="0" sid="776625482811312" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\3.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="CAM6" pingpong="0" repeatcount="1" repeatto="0" sid="187107039284078" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\6.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="CAM7" pingpong="0" repeatcount="1" repeatto="0" sid="362964943973486" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Leonardo\Downloads\Five Nights At Freddy&apos;s Files\Textures\Cams\Map\7.png" />
                     </animation>
                 </animation-folder>
             </object-type>

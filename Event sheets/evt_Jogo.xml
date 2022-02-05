@@ -998,22 +998,6 @@
                                     <param id="1" name="Visibility">0</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="345782273949260">
-                                    <conditions>
-                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="276961205015684" type="Scroll">
-                                            <param id="0" name="Object">MouseBruh</param>
-                                        </condition>
-                                        <condition id="-20" inverted="1" name="Is on mobile device" sid="790566631259221" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Set position" sid="523215984782930" type="Scroll">
-                                            <param id="0" name="X">lerp(Self.X,MouseBruh.X,0.2)</param>
-                                            <param id="1" name="Y">lerp(Self.Y,MouseBruh.Y,0.2)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -1052,22 +1036,6 @@
                                     <param id="1" name="Visibility">0</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="639672438830647">
-                                    <conditions>
-                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="175540954002184" type="Scroll">
-                                            <param id="0" name="Object">MouseBruh</param>
-                                        </condition>
-                                        <condition id="-20" inverted="1" name="Is on mobile device" sid="135738483211853" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Set position" sid="518554395940420" type="Scroll">
-                                            <param id="0" name="X">lerp(Self.X,MouseBruh.X,0.2)</param>
-                                            <param id="1" name="Y">lerp(Self.Y,MouseBruh.Y,0.2)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -1221,6 +1189,9 @@
                         <action id="6" name="Stop" sid="461351302042441" type="Audio">
                             <param id="0" name="Tag">&quot;lamp&quot;</param>
                         </action>
+                        <action id="6" name="Stop" sid="324001081791959" type="Audio">
+                            <param id="0" name="Tag">&quot;night1call&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="481600423793477">
@@ -1309,11 +1280,8 @@
                         <condition id="-4" name="Trigger once while true" sid="589139917376775" type="System" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="351896349623020" type="Audio">
-                            <param id="0" name="Audio file">Lamps</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
+                        <action id="6" name="Stop" sid="716048689609816" type="Audio">
+                            <param id="0" name="Tag">&quot;lamp&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1325,11 +1293,81 @@
                         <condition id="-4" name="Trigger once while true" sid="799529315378976" type="System" />
                     </conditions>
                     <actions>
-                        <action id="6" name="Stop" sid="716048689609816" type="Audio">
-                            <param id="0" name="Tag">&quot;lamp&quot;</param>
+                        <action id="0" name="Play" sid="351896349623020" type="Audio">
+                            <param id="0" name="Audio file">Lamps</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
                         </action>
                     </actions>
                 </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="158575958891702" title="Mapa">
+            <sub-events>
+                <event-group description="" sid="475714596651590" title="Mudar">
+                    <sub-events>
+                        <event-block sid="734002660893165">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="987844676436543" type="Touch">
+                                    <param id="0" name="Object">Cam_C</param>
+                                </condition>
+                                <condition id="-9" name="Layer is visible" sid="637156941521852" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="759635058967786" type="Hora">
+                                    <param id="0" name="Instance variable">Hora</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="473707692132867" type="Spr_StageCamera">
+                                    <param id="0" name="Animation">Cam_C.Cam</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="797789180532812" type="Obj_CamMap">
+                                    <param id="0" name="Animation">Cam_C.Cam</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="316550105675887" type="Audio">
+                                    <param id="0" name="Audio file">ChangeCamera</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="168999489188721" title="Aparece">
+                    <sub-events>
+                        <event-block sid="405984764477993">
+                            <conditions>
+                                <condition id="-9" name="Layer is visible" sid="473413101781882" type="System">
+                                    <param id="0" name="Layer">&quot;Painel de cameras0&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="174563486933137" type="Obj_CamMap">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="475820563306356">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Layer is visible" sid="775228397514084" type="System">
+                                    <param id="0" name="Layer">&quot;Painel de cameras0&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="908151418374092" type="Obj_CamMap">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
     </events>
