@@ -42,8 +42,8 @@
                     <effect-instances>
                         <effect-instance type="Sphere">
                             <parameters>
-                                <progress>1</progress>
-                                <radius>0.33</radius>
+                                <progress>0</progress>
+                                <radius>1</radius>
                                 <refractive-index>0.5</refractive-index>
                             </parameters>
                         </effect-instance>
