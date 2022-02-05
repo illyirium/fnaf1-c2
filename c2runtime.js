@@ -24778,14 +24778,14 @@ cr.behaviors.scrollto = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Audio,
 	cr.plugins_.Browser,
-	cr.plugins_.Keyboard,
+	cr.plugins_.Audio,
 	cr.plugins_.gamepad,
+	cr.plugins_.Keyboard,
 	cr.plugins_.Mouse,
 	cr.plugins_.Text,
-	cr.plugins_.Sprite,
 	cr.plugins_.Touch,
+	cr.plugins_.Sprite,
 	cr.behaviors.Rex_MoveTo,
 	cr.behaviors.Pin,
 	cr.behaviors.Fade,
