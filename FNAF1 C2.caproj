@@ -810,6 +810,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="t" sid="190147928433981">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="C_Mobile" plugin-id="Sprite" sid="806879241055093">
