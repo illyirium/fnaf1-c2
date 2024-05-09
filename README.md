@@ -1,12 +1,11 @@
 # fnaf1-c2
-remake de Fnaf 1 feito no Construct 2
+Port of FNAF 1 made in Construct 2
 
-Atualmente sendo desenvolvido por: Kibs e thegamerman88
+Was being developed by: kibs and leux08
 
-Quase sempre o codigo aqui é mais atualizado que o jogo exportado.
+The code here is always more up to date than the release builds.
 
-  Plugins/Behaviors de terceiros necessarios: 
+Required Plugins/Behaviors: 
     Behaviors
       MoveTo (rex_rainbow)
     Plugins
-    
