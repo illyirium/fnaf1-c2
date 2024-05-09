@@ -1,5 +1,5 @@
 # fnaf1-c2
-Port of FNAF 1 made in Construct 2
+Port of FNAF 1 to Construct 2
 
 Was being developed by: kibs and leux08
 
